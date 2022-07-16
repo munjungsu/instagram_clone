@@ -1,0 +1,17 @@
+.sidebar {
+    width:320px;
+    padding : 7em 2em 0 2em;
+
+    .profileSub {
+       img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+       }
+    }
+}
+@media only screen and (max-width : 1024px) {
+    .sidebar {
+        display: none;
+    }
+}

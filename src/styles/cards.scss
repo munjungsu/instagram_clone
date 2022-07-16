@@ -1,0 +1,16 @@
+.cards {
+    width: 600px;
+    .profileSub {
+        img {
+         width: 35px;
+         height: 35px;
+         border-radius: 50%;
+        }
+     }
+}
+
+@media only screen and (max-width : 600px){
+    .cards {
+        width : 100%;
+    }
+}
