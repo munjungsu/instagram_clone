@@ -9,7 +9,7 @@ const Sidebar = () => {
     return (
             <Sticky topOffset={-80}>
                 <div className="sidebar">
-                    <Profile username="mun" caption="jungsu" urlText="Switch" iconSize="big" image={image}/>
+                    <Profile username="bori" caption="보리" urlText="전환" iconSize="big" image={image}/>
                     <Suggestions />
                     <Footer />
                 </div>

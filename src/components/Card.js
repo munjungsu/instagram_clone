@@ -16,7 +16,7 @@ const Card = (props) => {
     } = props;
 
     return (
-        <div classNae="card">
+        <div className="card">
             <header>
                 <Profile iconSize="medium" storyBorder={storyBorder} />
                 <CardButton className="cardButton" />
@@ -26,7 +26,7 @@ const Card = (props) => {
             <div className="likedBy">
                 <Profile iconSize="small" hideAccountName={true} />
                 <span>
-                    Liked by <strong>{likedByText}</strong> and {" "} <strong>{likedByNumber} others</strong>
+                    <strong>{likedByText}</strong> 님 외 {" "} <strong>{likedByNumber}명</strong>이 좋아합니다.
                 </span>
             </div>
             <div className="comments">
@@ -36,10 +36,10 @@ const Card = (props) => {
                     );
                 })}
             </div>
-            <div className="timePosted">{hours} HOURS AGO</div>
+            <div className="timePosted">{hours} 시간 전</div>
             <div className="addComment">
-                <div className="commentText">Add a comment...</div>
-                <div className="postText">POST</div>
+                <div className="commentText">댓글 달기...</div>
+                <div className="postText">게시</div>
             </div>
         </div>
     );
