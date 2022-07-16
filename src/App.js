@@ -1,17 +1,16 @@
-import './styles/App.scss';
-import Navigation from './components/Navigation';
-import Cards from './components/Cards';
-import Sidebar from './components/Sidebar';
+import React from "react";
+import {Routes, Route} from 'react-router-dom';
+import "./styles/main.scss";
+import Main from './pages/Main';
+import Login from './pages/Login';
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <main>
-        <div className="container">
-          <Cards />
-          <Sidebar />
-        </div>
-      </main>
+    <div>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/feed' element={<Main />} />
+      </Routes>
     </div>
   );
 }
