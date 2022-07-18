@@ -13,11 +13,12 @@
         align-items : center;
         justify-content : space-between;
         max-width: 1000px;
+        min-width: 390px;
         margin : 0 auto;
     }
     .logo {
         padding : 0 1em;
-        width : 100px;
+        width : 80px;
         &:hover {
             cursor: pointer;
         }

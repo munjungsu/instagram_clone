@@ -21,7 +21,7 @@ const Menu = () => {
             <Polygon className="icon" />
             <Plus className="icon" />
             <Heart className="icon" />
-            <ProfileIcon iconSize="small" image={image} storyBorder={true}/>
+            <ProfileIcon className="profile" iconSize="small" image={image} storyBorder={true}/>
             <button onClick={onDelete}>LogOut</button>
         </div>
     );
