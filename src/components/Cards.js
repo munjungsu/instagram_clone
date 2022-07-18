@@ -59,9 +59,9 @@ const Cards = () => {
         <div className="cards">
             <Stories />
 
-            <Card accountName="mjcah2013" storyBorder={true} image="https://picsum.photos/800/900" comments={commentsOne} likedByText="bori" likedByNumber={89} hours={16} />
-            <Card accountName="가렌" storyBorder={true} image="https://picsum.photos/800/900" comments={commentsTwo} likedByText="mjcah2013" likedByNumber={102} hours={4} />
-            <Card accountName="제드" storyBorder={true} image="https://picsum.photos/800/900" comments={commentsThree} likedByText="야스오" likedByNumber={1292} hours={23} />
+            <Card accountName="mjcah2013" storyBorder={true} image="https://source.unsplash.com/random/800x900" comments={commentsOne} likedByText="bori" likedByNumber={89} hours={16} />
+            <Card accountName="가렌" storyBorder={true} image="https://source.unsplash.com/random/800x900" comments={commentsTwo} likedByText="mjcah2013" likedByNumber={102} hours={4} />
+            <Card accountName="제드" storyBorder={true} image="https://source.unsplash.com/random/800x900" comments={commentsThree} likedByText="야스오" likedByNumber={1292} hours={23} />
         </div>
     );
 };
