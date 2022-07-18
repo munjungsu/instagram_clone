@@ -14,7 +14,21 @@ const Card = (props) => {
         likedByNumber,
         hours,
     } = props;
-
+    const [addCom, setAddcom] = React.useState(comments);
+    const [nextId, setNextId] = React.useState(4);
+    const inputQuery = React.useRef();
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        const value = inputQuery.current.value;
+        const newAddCom = {user: "bori", text : value, id : nextId}
+        const newAddComs = [...addCom]
+        newAddComs.push(newAddCom);
+        
+        setAddcom(newAddComs);
+        setNextId(nextId+1);
+        inputQuery.current.value = '';
+    }
+    console.log(addCom);
     return (
         <div className="card">
             <header>
@@ -30,17 +44,21 @@ const Card = (props) => {
                 </span>
             </div>
             <div className="comments">
-                {comments.map((comment) =>{
+                {addCom.map((addCom) =>{
                     return (
-                        <Comment key={comment.id} accountName={comment.user} comment={comment.text} />
+                        <Comment key={addCom.id} accountName={addCom.user} comment={addCom.text} />
                     );
                 })}
             </div>
             <div className="timePosted">{hours} 시간 전</div>
+            <form onSubmit={handleSubmit}>
             <div className="addComment">
-                <div className="commentText">댓글 달기...</div>
-                <div className="postText">게시</div>
+                <div className="commentText">
+                    <input type="text" placeholder="댓글 달기..." ref={inputQuery}/>
+                </div>
+                <button type="submit" className="postText">게시</button>
             </div>
+            </form>
         </div>
     );
 };

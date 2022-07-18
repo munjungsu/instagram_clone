@@ -1,7 +1,10 @@
 .sidebar {
     width:320px;
     padding : 7em 2em 0 2em;
-
+    position: fixed;
+    left: 60%;
+    top : -5px;
+    
     .profileSub {
        img {
         width: 60px;

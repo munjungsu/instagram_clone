@@ -59,10 +59,16 @@
 
         .commentText {
             color : $font-color-secondary;
+            input {
+                width: 500px;
+                border: none;
+            }
         }
 
         .postText {
             color : $link-color-secondary;
+            border: none;
+            background-color : white;
         }
     }
 }
